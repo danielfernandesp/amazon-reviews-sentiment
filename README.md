@@ -25,3 +25,6 @@ O "Ext-Streamer": Esta função AWS Lambda rastreia regularmente um bucket S3 em
 O "Analyzer": As avaliações são tokenizadas em unigrama e comparadas com um dicionário de sentimento RDD. Cada palavra correspondente tem seu valor de sentimento somado para classificar a avaliação como positiva, negativa ou neutra. Os resultados de sentimento são mesclados com os dados de avaliação originais e armazenados no HDFS para análise.
 O "Visualizer": Os resultados da análise de sentimento são conectados ao QlikView, exibindo gráficos de séries temporais e opções de filtragem por ID de produto ou departamento. Esses dados são atualizados diariamente, unindo informações demográficas do produto com os dados de sentimento para uma visualização abrangente.
 O "Feeder-api": Várias tabelas Hive são criadas para armazenar os dados. A tabela de estágio contém saídas diárias com chaves únicas, que são então carregadas na tabela Master no formato ORC. Isso facilita a consulta e análise eficiente usando Hive QL e Spark SQL, rastreando métricas de sentimento por ID de produto ou departamento.
+
+![image](https://github.com/danielfernandesp/amazon-reviews-sentiment/assets/29729131/f225c8f1-b092-4256-93ab-5e599d03180c)
+
